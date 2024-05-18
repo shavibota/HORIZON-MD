@@ -71,7 +71,7 @@ Please use this bot responsibly and in compliance with WhatsApp's terms of servi
 
 For more information, Contact US.
 
-<p align="center"><a href="mailto:sithijashavishan1@gmail.com"> <img src="https://www.tapmango.com/wp-content/uploads/2019/06/email-button.png" width="220" height="38.45" /></a></p>
+<p align="center"><a href="mailto:sithijashavishan1@gmail.com"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdL6Vz3SvYLIeIPpZOMa1Yf1_TBtFM1hxpjCmkRfSXA&s" /></a></p>
 
 <br>
 ## HAVE A GREAT JOURNEY
