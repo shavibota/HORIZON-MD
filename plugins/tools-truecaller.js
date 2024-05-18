@@ -1,5 +1,4 @@
-//GURU ka maal hai
-//https://github.com/Guru322/GURU-BOT
+
 
 import fetch from 'node-fetch'
 
