@@ -13,8 +13,8 @@
       "value": ""
     },
     "SESSION_ID": {
-      "description": "session id",
-      "required": true,
+      "description": "session id,Leave it if you have n't..",
+      "required": false,
       "value": ""
     },
     "MODE": {
