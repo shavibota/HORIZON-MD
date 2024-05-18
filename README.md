@@ -49,6 +49,8 @@ A special thanks to our contributors who have made this bot possible:
 - Ossama 
 - Anila Lochana
 - ©THE REDFOX TEAM™
+- Asli GURU
+- OPENAI CHATGPT
 
 
 ## Author
