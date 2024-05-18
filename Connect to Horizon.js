@@ -78,15 +78,39 @@ await delay(1000 * 10)
 
 async function InitializeBot() {
   try {
-    console.log(chalk.bgBlack(chalk.redBright('initializing The Horizon...')));
+    const packageJson = readFileSync('package.json', 'utf8')
+    const packageData = JSON.parse(packageJson)
+    const check = packageData.author && packageData.author.name
+
+    if (!check) {
+      console.log('eww....')
+      process.exit(1)
+    }
+
+    const ath = Buffer.from('SE9SSVpPTi1NRA==', 'base64').toString()
+    const er_ms = Buffer.from(
+      `VGhpcyBpcyBhIGNvcHkgb2YgSG9yaXpvbixHRVQgT3JpZ2luYWwgb25lIEZyb20gOiBodHRwczovL2dpdGh1Yi5jb20vc2hhdmlib3RhL0hPUklaT04tTUQ=`,
+      'base64'
+    ).toString()
+    const congatu = Buffer.from(
+      `T3JpZ2luYWwgSG9yaXpvbiBjb3B5Li4uLkNvbmdyYXRzIGJybyEuLi4u`,
+      'base64'
+    ).toString()
+
+    if (check && check.trim().toLowerCase() !== ath.toLowerCase()) {
+      console.log(er_ms)
+      process.exit(1)
+    } else {
+      console.log(`${congatu}`)
+      console.log(chalk.bgBlack(chalk.redBright('initializing The Horizon...')))
+    }
   } catch (error) {
-    console.error(chalk.bgBlack(chalk.redBright('An error occurred:', error)));
-  } finally {
-    console.log(chalk.bgBlack(chalk.redBright('Congrats, ALL DONE!...')));
+    console.error('Error:', error)
   }
 }
 
-InitializeBot();
+InitializeBot()
+
 
 const pairingCode = !!global.pairingNumber || process.argv.includes('--pairing-code')
 const useQr = process.argv.includes('--qr')

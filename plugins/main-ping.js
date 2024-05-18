@@ -1,10 +1,8 @@
 import { exec } from 'child_process'
 import speed from 'performance-now'
-import {displayLoadingScreen} from "./lib/loading.js"
 
 let handler = async (m, { conn }) => {
-  await displayLoadingScreen(conn, m.chat)
-  m.react("⏱️")
+  m.react('⏱️')
   let thumbnail = 'https://i.imgur.com/ZKjzjwr.jpeg'
   let fgg = {
     key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' },
@@ -21,7 +19,6 @@ let handler = async (m, { conn }) => {
 
   await exec('neofetch --stdout', async (error, stdout) => {
     let latency = (speed() - timestamp).toFixed(4)
-
     await conn.relayMessage(
       m.chat,
       {

@@ -1,9 +1,12 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
+  
   m.react('👋🏻')
+  
   let name = m.pushName || conn.getName(m.sender)
   let img = 'https://i.imgur.com/5lbN4va.jpeg'
   let textal = `
   🌐 𝑮𝒓𝒆𝒆𝒕𝒊𝒏𝒈𝒔 𝒇𝒓𝒐𝒎 𝑯𝑶𝑹𝑰𝒁𝑶𝑵-𝑴𝑫 🌐\n\n
+  〈 ⚜ HELLO! ${name} ⚜ 〉
 
   𝐼 𝑎𝑚 𝑝𝑙𝑒𝑎𝑠𝑒𝑑 𝑡𝑜 𝑎𝑛𝑛𝑜𝑢𝑛𝑐𝑒 𝑡ℎ𝑎𝑡 𝐼 𝑎𝑚 𝑐𝑢𝑟𝑟𝑒𝑛𝑡𝑙𝑦 𝑜𝑝𝑒𝑟𝑎𝑡𝑖𝑜𝑛𝑎𝑙 𝑎𝑛𝑑 𝑟𝑒𝑎𝑑𝑦 𝑡𝑜 𝑠𝑒𝑟𝑣𝑒 𝑦𝑜𝑢𝑟 𝑚𝑒𝑠𝑠𝑎𝑔𝑖𝑛𝑔 𝑛𝑒𝑒𝑑𝑠.
   \n   
@@ -33,34 +36,15 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   — ©𝓣𝓱𝓮 𝓡𝓔𝓓𝓕𝓞𝓧 𝓘𝓝𝓒.
   \n
   `
-  let con = {
-    key: {
-      fromMe: false,
-      participant: `${m.sender.split`@`[0]}@s.whatsapp.net`,
-      ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}),
-    },
-    message: {
-      contactMessage: {
-        displayName: `${name}`,
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-      },
-    },
-  }
-  let doc = {
-    contextInfo: {
-      mentionedJid: [m.sender],
-      externalAdReply: {
-        title: textal,
-        body: 'HORIZON-MD',
-        thumbnailUrl: img,
-        sourceUrl: 'https://chat.whatsapp.com/KIpGJ7Z01T85Uq7NrEJu9q',
-        mediaType: 1,
-        renderLargerThumbnail: true,
-      },
-    },
-  }
+  await conn.sendMessage(m.chat,
+                         { video: { url: menuvid }, caption:textal.trim(),
+                                 contextInfo: 
+                                 {mentionedJid: [m.sender],
+                                 },
+                                 gifPlayback: true,
+                                 gifAttribution: 0},
+                         { quoted: fcontact })
 
-  await conn.sendMessage(m.chat, doc, { quoted: con })
 }
 
 handler.help = ['alive']

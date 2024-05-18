@@ -19,18 +19,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     text: str,
     contextInfo: {
       mentionedJid: [m.sender],
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363178281296360@newsletter',
-        newsletterName: global.author,
-        serverMessageId: -1,
-      },
-      forwardingScore: 999,
       externalAdReply: {
         title: 'ȶɦⱸ ɦơɽίʑơȵ-ɱɗ',
         body: '||-RUNTIME-||',
         thumbnailUrl: pp,
-        sourceUrl: 'https://github.cpm/shavibota',
+        sourceUrl: 'https://github.com/shavibota',
         mediaType: 1,
         renderLargerThumbnail: false,
       },

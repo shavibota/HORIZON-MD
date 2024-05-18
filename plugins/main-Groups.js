@@ -1,5 +1,4 @@
 let handler = async m =>
-  m.react("❤️")
   m.reply(
     `
 

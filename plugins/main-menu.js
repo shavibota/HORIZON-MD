@@ -431,13 +431,6 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
     { video: { url: menuvid }, caption: infoText.trim(),
     contextInfo: {
       mentionedJid: [m.sender],
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363178281296360@newsletter',
-        newsletterName: 'Click Here',
-        serverMessageId: -1,
-      },
-      forwardingScore: 999,
       externalAdReply: {
         title: 'ȶɦⱸ ɦơɽίʑơȵ-ɱɗ',
         body: 'ᴍᴇɴᴜ',
@@ -474,72 +467,84 @@ handler.before = async (m, { conn }) => {
   const choice = m.text.trim()
 
   if (choice === '1') {
+    m.react("1️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: botmenu },
       { quoted: fcontact }
     )
   } else if (choice === '2') {
+    m.react("2️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: ownermenu },
       { quoted: fcontact }
     )
   } else if (choice === '3') {
+    m.react("3️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: groupmenu },
       { quoted: fcontact }
     )
   } else if (choice === '4') {
+    m.react("4️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: funmenu },
       { quoted: fcontact }
     )
   } else if (choice === '5') {
+    m.react("5️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: reactmenu },
       { quoted: fcontact }
     )
   } else if (choice === '6') {
+    m.react("6️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: dlmenu },
       { quoted: fcontact }
     )
   } else if (choice === '7') {
+    m.react("7️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: logomenu },
       { quoted: fcontact }
     )
   } else if (choice === '8') {
+    m.react("8️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: stickermenu },
       { quoted: fcontact }
     )
   } else if (choice === '9') {
+    m.react("9️⃣")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: audiomenu },
       { quoted: fcontact }
     )
   } else if (choice === '10') {
+    m.react("🔟")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: animemenu },
       { quoted: fcontact }
     )
   } else if (choice === '11') {
+    m.react("🔢")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: toolsmenu },
       { quoted: fcontact }
     )
   } else if (choice === '12') {
+    m.react("🔢")
     await conn.sendMessage(
       m.chat,
       { image: { url: 'https://i.imgur.com/ZKjzjwr.jpeg' }, caption: Aimenu },
