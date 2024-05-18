@@ -30,32 +30,33 @@
 <p align="center"><a href="https://repl.it/github/shavibota/HORIZON-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
 
 ## About The Bot
-```
+
 HORIZON-MD is an innovative WhatsApp bot designed to enhance your messaging experience. It allows for multi-device support, ensuring you stay connected no matter where you are.
-```
+
 
 ## Features
-```
+
 - Multi-device messaging
 - Quick setup and easy deployment
 - User-friendly interface
 - Many Features
-```
 
 ## Helpers
 
-```
+
 A special thanks to our contributors who have made this bot possible:
 
 - Ossama 
 - Anila Lochana
 - ©THE REDFOX TEAM™
-```
+- Asli GURU
+- OPENAI CHATGPT
+
 
 ## Author
-```
+
 This bot was created by ©REDFOX TEAM™, a passionate developer Team dedicated to improving communication through technology.
-```
+
 
 ## Warnings
 ```
@@ -70,12 +71,9 @@ Please use this bot responsibly and in compliance with WhatsApp's terms of servi
 
 ##  
 
-Watch our bot in action and see how it can transform your WhatsApp experience:
-!HORIZON-MD Demo
-
 For more information, Contact US.
 
-<p align="center"><a href="mailto:sithijashavishan1@gmail.com"> <img src="https://www.tapmango.com/wp-content/uploads/2019/06/email-button.png" width="220" height="38.45" /></a></p>
+<p align="center"><a href="mailto:sithijashavishan1@gmail.com"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdL6Vz3SvYLIeIPpZOMa1Yf1_TBtFM1hxpjCmkRfSXA&s" /></a></p>
 
 <br>
 ## HAVE A GREAT JOURNEY
