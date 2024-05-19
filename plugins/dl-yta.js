@@ -3,7 +3,6 @@ import ytdl from 'ytdl-core'
 import ffmpeg from 'fluent-ffmpeg'
 
 const handler = async (m, { conn, args, usedPrefix, command }) => {
-  m.react('⬇')
   conn['youtubedl'] = conn['youtubedl'] || {}
   if (m.sender in conn['youtubedl']) {
     return
@@ -83,7 +82,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['ytaudio'].map(v => v + ' url')
+handler.help = ['yta'].map(v => v + ' url')
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3|audio)?$/i
 handler.register = false

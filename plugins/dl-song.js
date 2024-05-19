@@ -88,9 +88,6 @@ handler.before = async (m, { conn }) => {
     
 
     await streamPipeline(audioStream, writableStream)
-    
-    
-    const text = `${title}, *Downloaded by Horizon*, ${tmpDir}/${title} `
 
     const doc = {
       audio: {
@@ -102,7 +99,6 @@ handler.before = async (m, { conn }) => {
       waveform: [100, 0, 0, 0, 0, 0, 100],
       fileName: `${title}.mp3`,
     }
-    m.reply(m.chat, text)
 
     await conn.sendMessage(m.chat, doc,{ quoted: m })
     

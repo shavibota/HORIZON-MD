@@ -123,24 +123,23 @@ let reactmenu = `
 
 let dlmenu = `
 ╭──── ✦ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍 𝙈𝙀𝙉𝙐 ✦ ────╮
-│ ◈ .facebook <url>                               │
-│ ◈ .gdrive 🅟                                          │
-│ ◈ .gitclone <url>                                 │
-│ ◈ .igstalk                                              │
-│ ◈ .instagram                                        │
-│ ◈ .mediafire <url>                               │
-│ ◈ .mega                                               │
-│ ◈ .modapk                                          │
-│ ◈ .play <query>                                  │
-│ ◈ .play2 <text>                                   │
-│ ◈ .spotify                                             │
-│ ◈ .tiktok <url>                                     │
-│ ◈ .tiktokstalk                                        │
-│ ◈ .twitter <url>                                    │
-│ ◈ .ytmp3 <url>                                    │
-│ ◈ .ytsearch                                           │
-│ ◈ .ytmp4 <yt-link>                              │
-│ ◈ .wallpaper <query>                          │
+│ ◈ .song <text>       
+│ ◈ .facebook <url> 
+│ ◈ .yts <text>  
+│ ◈ .yta <yt-link>                                                                            
+│ ◈ .ytv <yt-link> 
+│ ◈ .spotify 
+│ ◈ .gdrive 🅟                                         
+│ ◈ .gitclone <url>                                 
+│ ◈ .igstalk                                              
+│ ◈ .instagram                                        
+│ ◈ .mediafire <url>                               
+│ ◈ .mega                                               
+│ ◈ .modapk                                                                                                                                              
+│ ◈ .tiktok <url>                                     
+│ ◈ .tiktokstalk                                        
+│ ◈ .twitter <url>                                                            
+│ ◈ .wallpaper <query>                          
 ╰───────────────────────────────────╯
 `
 let logomenu = `
