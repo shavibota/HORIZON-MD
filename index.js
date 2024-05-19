@@ -46,7 +46,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'Assets')));
 
 app.get('/', (req, res) => {
-  res.redirect('/jslib/status.html');
+  res.redirect('./jslib/status.html');
 });
 
 app.listen(port, () => {
