@@ -12,11 +12,6 @@
       "required": false,
       "value": ""
     },
-    "SESSION_ID": {
-      "description": "session id,Leave it if you have n't..",
-      "required": false,
-      "value": ""
-    },
     "MODE": {
       "description": "mode",
       "required": true,
