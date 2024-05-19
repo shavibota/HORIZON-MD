@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let img = 'https://i.imgur.com/5lbN4va.jpeg'
   let textal = `
   🌐 𝑮𝒓𝒆𝒆𝒕𝒊𝒏𝒈𝒔 𝒇𝒓𝒐𝒎 𝑯𝑶𝑹𝑰𝒁𝑶𝑵-𝑴𝑫 🌐\n\n
-  〈 ⚜ HELLO! ${name} ⚜ 〉
+  〈 ⚜ WELCOME! ${name} ⚜ 〉
 
   𝐼 𝑎𝑚 𝑝𝑙𝑒𝑎𝑠𝑒𝑑 𝑡𝑜 𝑎𝑛𝑛𝑜𝑢𝑛𝑐𝑒 𝑡ℎ𝑎𝑡 𝐼 𝑎𝑚 𝑐𝑢𝑟𝑟𝑒𝑛𝑡𝑙𝑦 𝑜𝑝𝑒𝑟𝑎𝑡𝑖𝑜𝑛𝑎𝑙 𝑎𝑛𝑑 𝑟𝑒𝑎𝑑𝑦 𝑡𝑜 𝑠𝑒𝑟𝑣𝑒 𝑦𝑜𝑢𝑟 𝑚𝑒𝑠𝑠𝑎𝑔𝑖𝑛𝑔 𝑛𝑒𝑒𝑑𝑠.
   \n   
